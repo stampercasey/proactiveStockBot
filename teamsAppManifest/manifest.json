@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "version": "1.0.0",
+  "id": "7914394a-cc5c-44a4-a96a-dd05835bc0cd",
+  "packageName": "com.teams.sample.teamsconversationbot",
+  "developer": {
+    "name": "Casey Stamper",
+    "websiteUrl": "https://www.microsoft.com",
+    "privacyUrl": "https://www.teams.com/privacy",
+    "termsOfUseUrl": "https://www.teams.com/termsofuser"
+  },
+  "icons": {
+    "outline": "icon-outline.png",
+    "color": "icon-color.png"
+  },
+  "name": {
+    "short": "proactiveStockBot",
+    "full": "proactiveStockBot"
+  },
+  "description": {
+    "short": "Azure bot that proactively communicates stock market data",
+    "full": "Azure bot that proactively communicates stock market data"
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [
+    {
+      "botId": "7914394a-cc5c-44a4-a96a-dd05835bc0cd",
+      "scopes": ["personal", "groupchat", "team"],
+      "supportsFiles": false,
+      "isNotificationOnly": false,
+      "commandLists": [
+        {
+          "scopes": ["personal", "groupchat", "team"],
+          "commands": [
+            {
+              "title": "Show Welcome",
+              "description": "Shows the welcome card"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "permissions": ["identity", "messageTeamMembers"],
+  "validDomains": ["token.botframework.com"]
+}
